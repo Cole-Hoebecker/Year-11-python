@@ -4,7 +4,7 @@ guesses = 0
 max_guess = 1000
 min_guess = 0
 while guesses < 10:
-    if max_guess < guess < min_guess:
+    if max_guess <= guess <= min_guess:
         guess = int(input("Guess a number from 1 - 1000 inclusive. "))
         if guess == random_num:
             print(f"Your guess, {guess}, is correct! You did it in {guesses} guesses!")
